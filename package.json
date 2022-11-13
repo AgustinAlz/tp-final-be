@@ -1,10 +1,10 @@
 {
-  "name": "api-test",
+  "name": "tp-final",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "./bin/baseApi",
-    "dev": "nodemon ./bin/baseApi",
+    "start": "./bin/tpFinal",
+    "dev": "nodemon ./bin/tpFinal",
     "format": "prettier --write '**/*.{js,json,md}'",
     "lint": "eslint . --ext .js",
     "nomad": "nomad"
@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larrieragaston/api-test.git"
+    "url": "git+https://github.com/AgustinAlz/tp-final-be.git"
   },
-  "author": "larrieragaston <larriera.gaston@gmail.com>",
-  "homepage": "https://github.com/larrieragaston/api-test#readme",
+  "author": "agustinalz <colorojo@hotmail.com>",
+  "homepage": "https://github.com/AgustinAlz/tp-final-be#readme",
   "dependencies": {
     "config": "^3.3.7",
     "cookie-parser": "~1.4.4",

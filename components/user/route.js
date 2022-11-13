@@ -10,7 +10,7 @@ router.delete('/:id', deleteUser)
 
 async function getAllUsers(req, res, next) {
   try {
-    const users = await req.model('User').find({ isActive: true })
+    const users = await req.model('User').find(/*{ isActive: true }*/)
     res.send(users)
   } catch (err) {
     next(err)
@@ -44,13 +44,14 @@ async function createUser(req, res, next) {
   const user = req.body
 
   try {
-    const role = await req.model('Role').findOne({ name: user.role })
-    if (!role) {
+    //const role = await req.model('Role').findOne({ name: user.role })
+    /*if (!role) {
       req.logger.error('Role not found')
       res.status(404).send('Role not found')
-    }
+    }*/
 
-    const userCreated = await req.model('User').create({ ...user, role: role._id })
+    //const userCreated = await req.model('User').create({ ...user, role: role._id })
+    const userCreated = await req.model('User').create({ ...user  })
 
     res.send(`User created :  ${userCreated.userName}`)
   } catch (err) {

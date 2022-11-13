@@ -1,8 +1,8 @@
 const config = require("config");
 const logger = require("./logger");
-const BaseApi = require("./lib/baseApi");
+const TpFinal = require("./lib/tpFinal");
 
-const baseApi = new BaseApi(config, logger);
-baseApi.BaseApi = BaseApi;
+const tpFinal = new TpFinal(config, logger);
+tpFinal.TpFinal = TpFinal;
 
-module.exports = baseApi;
+module.exports = tpFinal;

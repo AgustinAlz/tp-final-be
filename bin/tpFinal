@@ -6,7 +6,7 @@ function start() {
   const pkg = require('../package')
 
   process.stdout.write('\n')
-  process.stdout.write(`${figlet.textSync(`Base API`, { font: 'Ogre' })}\n`)
+  process.stdout.write(`${figlet.textSync(`TP Final`, { font: 'Ogre' })}\n`)
   process.stdout.write('\n')
   process.stdout.write(
     `Version: ${pkg.version}, Environment: ${process.env.NODE_ENV || 'default'}\n`,
@@ -19,14 +19,14 @@ function start() {
   program
     .start()
     .then((result) => {
-      program.logger.info(`BaseApi server started`)
+      program.logger.info(`TP-Final server started`)
       program.logger.info(`Environment ${process.env.NODE_ENV || 'default'}`)
       if (result && result.url) {
         program.logger.info(`Listening for HTTP requests at ${result.url}`)
       }
     })
     .catch((err) => {
-      program.logger.error(`Failed to start BaseApi server`, err)
+      program.logger.error(`Failed to start TP-Final server`, err)
     })
 }
 

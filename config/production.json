@@ -9,13 +9,13 @@
 
   "auth": {
     "token": {
-      "issuer": "BaseApi",
+      "issuer": "TpFinal",
       "algorithm": "RS256",
       "appExpiresIn": "90d",
       "dashboardExpiresIn": "1d",
       "audience": ["app", "dashboard"]
     },
-    "key": "base-api-local",
+    "key": "tp-final-db-local",
     "passwordTtl": 94670856000,
     "passwordResetTokenTtl": 15552000000,
     "verificationTokenTtl": 15552000000
@@ -27,8 +27,8 @@
   },
 
   "mongo": {
-    "db": "base-api",
-    "url": "mongodb://localhost/base-api"
+    "db": "tp-final-db",
+    "url": "mongodb://localhost/tp-final-db"
   },
 
   "logger": {
@@ -47,7 +47,7 @@
   "aws": {
     "accessKeyId": "",
     "secretAccessKey": "",
-    "bucket": "base-api-local",
+    "bucket": "tp-final-db-local",
     "region": "us-east-1"
   }
 }
